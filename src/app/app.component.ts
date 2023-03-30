@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pfa-2-evoting-platform-front-end';
+  title = 'Votili';
 }
