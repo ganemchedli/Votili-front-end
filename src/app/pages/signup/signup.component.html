@@ -1,1 +1,112 @@
-<p>signup works!</p>
+<div class="main-panel">
+  <div class="content-wrapper">
+    <div class="row">
+      <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <div class="brand-logo">
+              <img [src]="imageUrl" style="width: 20%; height:20%" alt="" />
+            </div>
+            <h4 class="card-title">Formulair d'inscription</h4>
+            <p class="card-description">Inscrivez-vous dans notre plateforme</p>
+            <form class="forms-sample">
+              <div class="form-group">
+                <label for="Nom">Nom</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Nom"
+                  placeholder="Nom"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Prenom">Prenom</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Prenom"
+                  placeholder="Prenom"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Email"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="cin">Numéro carte d'identité</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cin"
+                  placeholder=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="bac">Titulaire de baccalauréat</label><br>
+                <select name="bac" class="custom-select">
+                    <option value="0">--Oui ou Non</option>
+                    <option value="1">Oui</option>
+                    <option value="2">Non</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                <label for="age">Date de naissance</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="age"
+                  placeholder=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="genre">Genre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="genre"
+                  placeholder="Homme/Femme"
+                />
+              </div>
+              <div class="form-group">
+                <label for="region">Region</label><br />
+                <select name="region" class="">
+                  <option value="">--Choisir une region--</option>
+                  <option value="nord">nord</option>
+                  <option value="sud">sud</option>
+                  <option value="ouest">ouest</option>
+                  <option value="est">est</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="confirmepassword">Confirmer mot de passe</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmepassword"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary me-2">
+                Enregistrer
+              </button>
+              <button class="btn btn-light">Annuler</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

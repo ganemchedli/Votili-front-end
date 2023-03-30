@@ -12,6 +12,7 @@ import { NewelectionComponent } from './pages/newelection/newelection.component'
 import { VoteComponent } from './pages/vote/vote.component';
 import { ListelectionsComponent } from './pages/listelections/listelections.component';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './layout/components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     SignupComponent,
     NewelectionComponent,
     VoteComponent,
-    ListelectionsComponent
+    ListelectionsComponent,
+    NavbarComponent
     
   ],
   imports: [
