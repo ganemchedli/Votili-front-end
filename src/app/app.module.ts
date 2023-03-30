@@ -13,6 +13,9 @@ import { VoteComponent } from './pages/vote/vote.component';
 import { ListelectionsComponent } from './pages/listelections/listelections.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './layout/components/navbar/navbar.component';
+import { ResultComponent } from './pages/result/result.component';
+import { PiechartComponent } from './pages/result/piechart/piechart.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -25,13 +28,16 @@ import { NavbarComponent } from './layout/components/navbar/navbar.component';
     NewelectionComponent,
     VoteComponent,
     ListelectionsComponent,
-    NavbarComponent
+    NavbarComponent,
+    ResultComponent,
+    PiechartComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
