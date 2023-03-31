@@ -10975,7 +10975,7 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked[type="checkbox"] {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+  background-image: url("https://spng.pngfind.com/pngs/s/6-62221_blue-check-marks-tick-blue-hd-png-download.png");
 }
 
 .form-check-input:checked[type="radio"] {
@@ -28897,7 +28897,7 @@ div.tagsinput span.tag a {
 @media (max-width: 991px) {
   .main-panel-navbaradmin {
     padding-left : 10px ;
-    padding-right: 10px;
+    padding-right: 200px;
     margin-left: 0;
     width: 100%;
   }
@@ -31383,6 +31383,11 @@ div.tagsinput span.tag a {
   user-select: none;
 }
 
-
+/* body{
+  background: url("assets/images/blockchain-technology-background-gradient-blue.jpg") ;
+  background-repeat: no-repeat;
+ 
+  background-size:cover;
+} */
 
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */
