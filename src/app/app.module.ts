@@ -16,6 +16,13 @@ import { NavbarComponent } from './layout/components/navbar/navbar.component';
 import { ResultComponent } from './pages/result/result.component';
 import { PiechartComponent } from './pages/result/piechart/piechart.component';
 import { NgChartsModule } from 'ng2-charts';
+import { TestComponent } from './test/test.component';
+import { AllelectionvotantComponent } from './allelectionvotant/allelectionvotant.component';
+import { StatAgeComponent } from './pages/result/stat-age/stat-age.component';
+import { StatRegionComponent } from './pages/result/stat-region/stat-region.component';
+import { StatGenreComponent } from './pages/result/stat-genre/stat-genre.component';
+import { StatbacComponent } from './pages/result/statbac/statbac.component';
+import { SidebarComponent } from './pages/result/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +37,14 @@ import { NgChartsModule } from 'ng2-charts';
     ListelectionsComponent,
     NavbarComponent,
     ResultComponent,
-    PiechartComponent
+    PiechartComponent,
+    TestComponent,
+    AllelectionvotantComponent,
+    StatAgeComponent,
+    StatRegionComponent,
+    StatGenreComponent,
+    StatbacComponent,
+    SidebarComponent
     
   ],
   imports: [
