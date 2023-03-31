@@ -16,8 +16,11 @@ import { NavbarComponent } from './layout/components/navbar/navbar.component';
 import { ResultComponent } from './pages/result/result.component';
 import { PiechartComponent } from './pages/result/piechart/piechart.component';
 import { NgChartsModule } from 'ng2-charts';
+import { StatGenreComponent} from './pages/result/stat-genre/stat-genre.component';
+import {StatAgeComponent} from './pages/result/stat-age/stat-age.component';
+import {StatRegionComponent }from './pages/result/stat-region/stat-region.component';
+import { StatbacComponent } from './pages/result/statbac/statbac.component';
 import { NavbaradminComponent } from './layout/components/navbaradmin/navbaradmin.component';
-import { AutorizevotersComponent } from './pages/autorizevoters/autorizevoters.component';
 import { AddcandidateComponent } from './pages/addcandidate/addcandidate.component';
 
 @NgModule({
@@ -34,9 +37,14 @@ import { AddcandidateComponent } from './pages/addcandidate/addcandidate.compone
     NavbarComponent,
     ResultComponent,
     PiechartComponent,
+    ResultComponent,
+    StatGenreComponent,
+    StatRegionComponent,
+    StatAgeComponent,
+    StatbacComponent,
     NavbaradminComponent,
-    AutorizevotersComponent,
     AddcandidateComponent
+
     
   ],
   imports: [
