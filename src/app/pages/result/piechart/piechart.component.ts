@@ -11,9 +11,9 @@ export class PiechartComponent {
    public pieChartOptions: ChartOptions<'pie'> = {
     responsive: false,
   };
-  public pieChartLabels = [ [ 'Download', 'Sales' ], [ 'In', 'Store', 'Sales' ], 'Mail Sales' ];
+  public pieChartLabels = [ [ 'Condidat1'], [ 'condidat2' ], 'condidat3' ];
   public pieChartDatasets = [ {
-    data: [ 300, 500, 100 ]
+    data: [ 100, 500, 100 ]
   } ];
   public pieChartLegend = true;
   public pieChartPlugins = [];
