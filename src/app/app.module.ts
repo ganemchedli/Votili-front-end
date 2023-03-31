@@ -16,6 +16,9 @@ import { NavbarComponent } from './layout/components/navbar/navbar.component';
 import { ResultComponent } from './pages/result/result.component';
 import { PiechartComponent } from './pages/result/piechart/piechart.component';
 import { NgChartsModule } from 'ng2-charts';
+import { NavbaradminComponent } from './layout/components/navbaradmin/navbaradmin.component';
+import { AutorizevotersComponent } from './pages/autorizevoters/autorizevoters.component';
+import { AddcandidateComponent } from './pages/addcandidate/addcandidate.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { NgChartsModule } from 'ng2-charts';
     ListelectionsComponent,
     NavbarComponent,
     ResultComponent,
-    PiechartComponent
+    PiechartComponent,
+    NavbaradminComponent,
+    AutorizevotersComponent,
+    AddcandidateComponent
     
   ],
   imports: [

@@ -20132,10 +20132,10 @@ code {
 .stretch-card {
   display: -webkit-flex;
   display: flex;
-  -webkit-align-items: stretch;
-  align-items: stretch;
-  -webkit-justify-content: stretch;
-  justify-content: stretch;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 .stretch-card > .card {
@@ -28876,12 +28876,31 @@ div.tagsinput span.tag a {
 
 .main-panel {
   transition: width 0.25s ease, margin 0.25s ease;
-  width: calc(100% - 220px);
+  width: 100%;
   min-height: calc(100vh - 97px);
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
+}
+.main-panel-navbaradmin {
+  padding-left: 200px;
+  padding-right: 200px;
+  transition: width 0.25s ease, margin 0.25s ease;
+  width: 100%;
+  min-height: calc(80vh - 97px);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  .main-panel-navbaradmin {
+    padding-left : 10px ;
+    padding-right: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -28895,8 +28914,17 @@ div.tagsinput span.tag a {
   background: #F4F5F7;
   padding: 1.5rem 2.187rem 1.5rem 3.5rem;
   width: 100%;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
+   -webkit-flex-grow: 1;
+  flex-grow: 1; 
+  justify-content: center;
+}
+.content-wrapper-add {
+  background: #FFFFFF;
+  padding: 1.5rem 2.187rem 1.5rem 3.5rem;
+  width: 100%;
+   -webkit-flex-grow: 1;
+  flex-grow: 1; 
+  justify-content: center;
 }
 
 @media (max-width: 767px) {
