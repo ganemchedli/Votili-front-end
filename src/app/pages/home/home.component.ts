@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   
+myimage:string="assets/images/logo/logo1.png";
 
 }
