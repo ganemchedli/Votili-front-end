@@ -1,11 +1,11 @@
-<div class="main-panel">
-  <div class="content-wrapper">
-    <div class="row">
-      <div class="col-md-6 grid-margin stretch-card">
-        <div class="card">
-          <div class="card-body">
+<div class="container-scroller">
+  <div class="container-fluid page-body-wrapper full-page-wrapper">
+    <div class="content-wrapper d-flex align-items-center auth px-0">
+      <div class="row w-100 mx-0">
+        <div class="col-lg-4 mx-auto">
+          <div class="auth-form-light text-left py-5 px-4 px-sm-5">
             <div class="brand-logo">
-              <img [src]="imageUrl" style="width: 20%; height:20%" alt="" />
+              <img [src]="imageUrl" alt="logo" />
             </div>
             <h4 class="card-title">Formulair d'inscription</h4>
             <p class="card-description">Inscrivez-vous dans notre plateforme</p>
@@ -99,9 +99,8 @@
                   id="confirmepassword"
                 />
               </div>
-              <button type="submit" class="btn btn-primary me-2">
-                Enregistrer
-              </button>
+              <a href="home" class="btn btn-primary me-2">Enregistrer</a>
+
               <button class="btn btn-light">Annuler</button>
             </form>
           </div>

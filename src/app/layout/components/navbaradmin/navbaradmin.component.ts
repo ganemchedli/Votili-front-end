@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbaradmin.component.css']
 })
 export class NavbaradminComponent {
-  imageUrl = "assets/images/logo1.png";
+  imageUrl = "assets/images/logo/logo1.png";
 }

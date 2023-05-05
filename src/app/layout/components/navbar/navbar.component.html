@@ -1,299 +1,83 @@
-<nav class="navbar default-layout col-lg-12 col-12 p-0  d-flex align-items-top flex-row">
-  <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-    <div class="me-3">
-      <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
-        <span class="icon-menu"></span>
-      </button>
-    </div>
-    <div>
-      <a class="brand-logo"  href="">
-        <img [src]="imageUrl" style="width: 70%; height:70%;" alt="logo" />
-      </a>
-  
-    </div>
-  </div>
-  <div class="navbar-menu-wrapper d-flex align-items-top"> 
-    <ul class="navbar-nav">
-      <!-- <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-        <h1 class="welcome-text">Bonjour  <span class="text-black fw-bold">Administrateur !</span></h1>
-        <h3 class="welcome-sub-text">Créer votre élection sécurisé </h3>
-      </li> -->
-    </ul>
-    <ul class="navbar-nav ms-auto">
-      <button class="btn btn-link">
-        <a href="">Accueil</a>
-      </button>
-      <button class="btn btn-link">
-        <a href="">À propos</a>
-      </button>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Plateforme de Vote en Ligne</title>
+	<style>
+		
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 60px;
+			background-color: white;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			padding: 0 20px;
+		}
       
-      <button class="btn btn-info" >Connexion</button>
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        .logo {
+          width: 100px;
+          height: 100px;
+          background-image: url("assets/images/logo/logo1.png");
+          background-size: cover;
+          transition: transform 0.3s ease-in-out;
+        }
+        .logo:hover {
+          transform: scale(1.1);
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+	</style>
+</head>
+<body>
+	
+<header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">
       
-
-    </ul>
-    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
-      <span class="mdi mdi-menu"></span>
-    </button>
-  </div>
-</nav>
-
-
-
-
-
-
-<!-- <div
-  data-animation="default"
-  data-collapse="medium"
-  data-duration="400"
-  data-easing="ease"
-  data-easing2="ease"
-  role="banner"
-  class="header w-nav"
->
-  <div class="container-default w-container">
-    <div class="header-wrapper">
-      <div class="split-content header-right">
-        <div class="brand">
-          <a
-            href="/"
-            aria-current="page"
-            class="brand w-nav-brand w--current"
-            aria-label="home"
-            ><img [src]="imageUrl" alt="" style="width: 20%; height: 20%"
-          /></a>
-        </div>
-      </div>
-      <div class="split-content header-left">
-        <nav role="navigation" class="nav-menu w-nav-menu">
-          <ul role="list" class="header-navigation">
-            <li class="nav-item-wrapper niw2">
-              <a href="tel:+33189168766" class="nav-link-2"
-                >+44&nbsp;2034 456 080</a
-              >
-            </li>
-            <li class="nav-item-wrapper-copy">
-              <a
-                data-w-id="5110368d-3014-4be6-723f-4f6eb4284610"
-                href="tel:+33189168766"
-                class="nav-link-2-copy"
-                >|</a
-              >
-            </li>
-            <li class="nav-item-wrapper">
-              <a href="/" aria-current="page" class="nav-link-2 w--current"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item-wrapper">
-              <div
-                data-hover="true"
-                data-delay="0"
-                class="nav-link-dropdown w-dropdown"
-                style="max-width: 1270px"
-              >
-                <div
-                  class="nav-link-2 dropdown w-dropdown-toggle"
-                  id="w-dropdown-toggle-0"
-                  aria-controls="w-dropdown-list-0"
-                  aria-haspopup="menu"
-                  aria-expanded="false"
-                  role="button"
-                  tabindex="0"
-                >
-                  <div class="nav-link-2">
-                    Pricing<span class="dropdown-arrow"></span>
-                  </div>
-                </div>
-                <nav
-                  class="dropdown-list dl2 w-dropdown-list"
-                  id="w-dropdown-list-0"
-                  aria-labelledby="w-dropdown-toggle-0"
-                >
-                  <div class="dropdown-nav-main-wrapper">
-                    <div class="dropdown-nav-pages-wrapper">
-                      <div class="dropdown-nav-content">
-                        <ul role="list" class="dropdown-nav">
-                          <li class="dropdown-nav-item">
-                            <a
-                              href="/en/pricing/associations"
-                              class="dropdown-nav-link-2 nav-link"
-                              tabindex="0"
-                              >Nonprofits</a
-                            >
-                          </li>
-                          <li class="dropdown-nav-item">
-                            <a
-                              href="/en/pricing/pricing-companies"
-                              class="dropdown-nav-link-2 nav-link"
-                              tabindex="0"
-                              >Companies</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-            </li>
-            <li class="nav-item-wrapper">
-              <div
-                data-hover="true"
-                data-delay="0"
-                class="nav-link-dropdown w-dropdown"
-                style="max-width: 1270px"
-              >
-                <div
-                  class="nav-link-2 dropdown w-dropdown-toggle"
-                  id="w-dropdown-toggle-1"
-                  aria-controls="w-dropdown-list-1"
-                  aria-haspopup="menu"
-                  aria-expanded="false"
-                  role="button"
-                  tabindex="0"
-                >
-                  <div class="nav-link-2">
-                    About<span class="dropdown-arrow"></span>
-                  </div>
-                </div>
-                <nav
-                  class="dropdown-list dl2 w-dropdown-list"
-                  id="w-dropdown-list-1"
-                  aria-labelledby="w-dropdown-toggle-1"
-                >
-                  <div class="dropdown-nav-main-wrapper">
-                    <div class="dropdown-nav-pages-wrapper">
-                      <div class="dropdown-nav-content">
-                        <ul role="list" class="dropdown-nav">
-                          <li class="dropdown-nav-item">
-                            <a
-                              href="/en/about/our-solution"
-                              class="dropdown-nav-link-2 nav-link"
-                              tabindex="0"
-                              >The solution</a
-                            >
-                          </li>
-                          <li class="dropdown-nav-item">
-                            <a
-                              href="/en/about/team"
-                              class="dropdown-nav-link-2 nav-link"
-                              tabindex="0"
-                              >The team</a
-                            >
-                          </li>
-                          <li class="dropdown-nav-item">
-                            <a
-                              href="/en/about/company"
-                              class="dropdown-nav-link-2 nav-link"
-                              tabindex="0"
-                              >The company</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-            </li>
-          </ul>
-          <div
-            data-w-id="ba5560ca-6f19-33d5-4d79-e76e1b74a549"
-            class="wg-element-wrapper sw5"
-            style="opacity: 1"
-          >
-            <div
-              data-hover="true"
-              data-delay="300"
-              data-w-id="ba5560ca-6f19-33d5-4d79-e76e1b74a54a"
-              class="wg-dropdown-1 w-dropdown"
-              style="background-color: rgba(0, 0, 0, 0); max-width: 1270px"
-            >
-              <div
-                lang="en"
-                class="wg-dd-1-togle w-dropdown-toggle"
-                id="w-dropdown-toggle-2"
-                aria-controls="w-dropdown-list-2"
-                aria-haspopup="menu"
-                aria-expanded="false"
-                role="button"
-                tabindex="0"
-              >
-                <div class="text-block-7">en</div>
-              </div>
-              <nav
-                data-w-id="ba5560ca-6f19-33d5-4d79-e76e1b74a54e"
-                class="wg-dd-1-list w-dropdown-list"
-                style="height: 0%; background-color: rgba(0, 0, 0, 0)"
-                id="w-dropdown-list-2"
-                aria-labelledby="w-dropdown-toggle-2"
-              >
-                <a
-                  href="#"
-                  lang="de"
-                  class="wg-dropdown-1-link w-dropdown-link"
-                  tabindex="0"
-                  >DE</a
-                ><a
-                  href="#"
-                  lang="es"
-                  class="wg-dropdown-1-link w-dropdown-link"
-                  tabindex="0"
-                  >es</a
-                ><a
-                  href="https://www.v8te.com/fr"
-                  class="dropdown-fr-link w-dropdown-link"
-                  tabindex="0"
-                  >FR</a
-                ><a
-                  href="#"
-                  lang="it"
-                  class="wg-dropdown-1-link w-dropdown-link"
-                  tabindex="0"
-                  >It</a
-                ><a
-                  href="#"
-                  lang="nl"
-                  class="wg-dropdown-1-link w-dropdown-link"
-                  tabindex="0"
-                  >NL</a
-                ><a
-                  href="#"
-                  lang="pt"
-                  class="wg-dropdown-1-link w-dropdown-link"
-                  tabindex="0"
-                  >pt</a
-                >
-              </nav>
-            </div>
-          </div>
-        </nav>
-        <a
-          href="https://app.v8te.com/connexion"
-          class="button-primary-2 header-button w-button"
-          >Log in</a
-        >
-        <div
-          class="menu-button-2 w-nav-button"
-          style="-webkit-user-select: text"
-          aria-label="menu"
-          role="button"
-          tabindex="0"
-          aria-controls="w-nav-overlay-0"
-          aria-haspopup="menu"
-          aria-expanded="false"
-        >
-          <div class="header-menu-button-icon-wrapper-2">
-            <div class="icon-wrapper">
-              <div class="header-menu-button-icon-top-2"></div>
-              <div class="header-menu-button-icon-medium-2"></div>
-              <div class="header-menu-button-icon-bottom-2"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     </div>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="#about">About</a></li>
+        <li><a class="nav-link scrollto" href="#services">Services</a></li>
+        <li><a class="nav-link scrollto " href="/login">Connexion</a></li>
+        <li><a class="nav-link scrollto" href="/inscrit">Inscription</a></li>
+        <li><a class="nav-link scrollto" href="/login">Résultats</a></li>
+        <li><a class="nav-link scrollto" href="/login">Voter</a></li>
+        
+        <li><a class="nav-link scrollto" routerLink="#contact">Contact</a></li>
+        <li><a class="getstarted scrollto" routerLink="/login">Get Started</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
   </div>
-  <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
-</div> -->
+</header><!-- End Header -->
+
+	
+</body>
+</html>

@@ -22,8 +22,20 @@ import {StatRegionComponent }from './pages/result/stat-region/stat-region.compon
 import { StatbacComponent } from './pages/result/statbac/statbac.component';
 import { NavbaradminComponent } from './layout/components/navbaradmin/navbaradmin.component';
 import { AddcandidateComponent } from './pages/addcandidate/addcandidate.component';
-import { NavbaruserComponent } from './layout/components/navbaruser/navbaruser.component';
+import { RouterModule } from '@angular/router';
+import { TestComponent } from './test/test.component';
+import { SidebarComponent } from './pages/result/sidebar/sidebar.component';
 import { AutorizevotersComponent } from './pages/autorizevoters/autorizevoters.component';
+import { AllelectionvotantComponent } from './allelectionvotant/allelectionvotant.component';
+import { AllelectionComponent } from './pages/allelection/allelection.component';
+import { NavbaruserComponent } from './layout/components/navbaruser/navbaruser.component';
+import { ServiceComponent } from './pages/service/service.component';
+import { CodeVoteComponent } from './pages/code-vote/code-vote.component';
+import { StatCodeComponent } from './pages/stat-code/stat-code.component';
+import { ElectiondetailsComponent } from './pages/electiondetails/electiondetails.component';
+import { RealtimeresultComponent } from './pages/realtimeresult/realtimeresult.component';
+import { FormNewVotantComponent } from './pages/form-new-votant/form-new-votant.component';
+import { FormNewCondidatComponent } from './pages/form-new-condidat/form-new-condidat.component';
 
 @NgModule({
   declarations: [
@@ -47,14 +59,47 @@ import { AutorizevotersComponent } from './pages/autorizevoters/autorizevoters.c
     NavbaradminComponent,
     AddcandidateComponent,
     AutorizevotersComponent,
-    NavbaruserComponent
+   AllelectionComponent,
+   NavbaruserComponent,
+   ServiceComponent,
+   CodeVoteComponent,
+   StatCodeComponent,
+   ElectiondetailsComponent,
+   RealtimeresultComponent,
+   FormNewVotantComponent,
+   FormNewCondidatComponent,
+ 
+
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgChartsModule
+    NgChartsModule,
+    
+    RouterModule.forRoot([
+      {path:'inscrit', component:SignupComponent},
+  {path:'login', component:LoginComponent},
+  {path:'voter', component:VoteComponent},
+  {path:'election', component:NewelectionComponent},
+  {path:'home', component:HomeComponent},
+  {path:'result', component:TestComponent},
+  {path:'stat1', component:PiechartComponent},
+  {path:'statage', component:StatAgeComponent},
+  {path:'statgenre', component:StatGenreComponent},
+  {path:'statregion', component:StatRegionComponent},
+  {path:'statbac', component:StatbacComponent},
+  {path:'stat2', component:SidebarComponent},
+  {path:'allelections', component:AllelectionComponent},
+  {path:'sercvice', component:ServiceComponent},
+  {path:'intermediaire', component:CodeVoteComponent},
+  {path:'stat-code', component:StatCodeComponent},
+  {path:'electiondetails', component:ElectiondetailsComponent},
+  {path:'realtimeresult', component:RealtimeresultComponent},
+  {path:'formcin', component:FormNewVotantComponent},
+  {path:'formcondidat', component:FormNewCondidatComponent},
+])
   ],
   providers: [],
   bootstrap: [AppComponent]
