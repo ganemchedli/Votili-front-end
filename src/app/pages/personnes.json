@@ -1,0 +1,8 @@
+{
+    "personnes": [
+        {"idcond":2,"age":55,"genre":"femme","diplome":true,"region":"sud","login":"user1","password":"pass1"},
+        {"idcond":1,"age":55,"genre":"homme","diplome":false,"region":"nord","login":"user2","password":"pass2"},
+        {"idcond":1,"age":28,"genre":"homme","diplome":true,"region":"ouest","login":"user3","password":"pass3"},
+        {"idcond":2,"age":28,"genre":"homme","diplome":true,"region":"ouest","login":"user3","password":"pass3"}
+                 ]
+}

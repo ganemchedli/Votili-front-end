@@ -11,7 +11,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { NewelectionComponent } from './pages/newelection/newelection.component';
 import { VoteComponent } from './pages/vote/vote.component';
 import { ListelectionsComponent } from './pages/listelections/listelections.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './layout/components/navbar/navbar.component';
 import { ResultComponent } from './pages/result/result.component';
 import { PiechartComponent } from './pages/result/piechart/piechart.component';
@@ -36,6 +36,7 @@ import { ElectiondetailsComponent } from './pages/electiondetails/electiondetail
 import { RealtimeresultComponent } from './pages/realtimeresult/realtimeresult.component';
 import { FormNewVotantComponent } from './pages/form-new-votant/form-new-votant.component';
 import { FormNewCondidatComponent } from './pages/form-new-condidat/form-new-condidat.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,7 @@ import { FormNewCondidatComponent } from './pages/form-new-condidat/form-new-con
     NavbarComponent,
     ResultComponent,
     PiechartComponent,
-    ResultComponent,
+   
     StatGenreComponent,
     StatRegionComponent,
     StatAgeComponent,
@@ -68,6 +69,7 @@ import { FormNewCondidatComponent } from './pages/form-new-condidat/form-new-con
    RealtimeresultComponent,
    FormNewVotantComponent,
    FormNewCondidatComponent,
+
  
 
     
@@ -77,6 +79,8 @@ import { FormNewCondidatComponent } from './pages/form-new-condidat/form-new-con
     AppRoutingModule,
     FormsModule,
     NgChartsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     
     RouterModule.forRoot([
       {path:'inscrit', component:SignupComponent},

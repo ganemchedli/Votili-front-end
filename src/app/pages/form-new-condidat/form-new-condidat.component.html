@@ -9,14 +9,14 @@
               </div>
               <h4 class="card-title">Ajouter Condidat</h4>
              
-              <form class="forms-sample">
+              <form [formGroup]="form" (ngSubmit)="submit()" class="forms-sample">
                 <div class="form-group">
                   <label for="Nom">Nom</label>
                   <input
                     type="text"
                     class="form-control"
                     id="Nom"
-                    placeholder="Nom"
+                    placeholder="Nom" formControlName="nom"
                   />
                 </div>
                 <div class="form-group">
@@ -25,7 +25,7 @@
                     type="text"
                     class="form-control"
                     id="Prenom"
-                    placeholder="Prenom"
+                    placeholder="Prenom" formControlName="prenom"
                   />
                 </div>
                 <div class="form-group">
@@ -34,7 +34,7 @@
                     type="text"
                     class="form-control"
                     id="pseudo"
-                    placeholder="pseudo du condidat"
+                    placeholder="pseudo du condidat" formControlName="pseudo"
                   />
                 </div>
                 <div class="form-group">
@@ -43,7 +43,7 @@
                     type="text"
                     class="form-control"
                     id="cin"
-                    placeholder=""
+                    placeholder="N° CIN" formControlName="numcin"
                   />
                 </div>
                 
@@ -51,9 +51,12 @@
                
                 
                 
-               
-                <a href="/election" class="btn btn-primary me-2">Enregistrer</a>
-  
+                <a href="/election">
+                  <button class="btn btn-primary me-2" [disabled]="!form.valid" (click)="submit()">Enregistrer</button>
+                </a>
+                
+                
+              
                 <button class="btn btn-light">Annuler</button>
               </form>
             </div>
