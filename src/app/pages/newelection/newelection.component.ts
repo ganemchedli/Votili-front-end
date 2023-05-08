@@ -12,8 +12,9 @@ export class NewelectionComponent implements OnInit {
   constructor(private service: ServiceElectionService, private router: Router) { }
   data: any
   //mtee l ms génerer code
-  code :string="OXAA22RR3"
-   data1 :any
+  code :any="OXAA22RR3"
+  data1: string | undefined;
+
   form = new FormGroup({
     titre: new FormControl('', [Validators.required]),
     description: new FormControl('', [Validators.required]),
@@ -21,19 +22,23 @@ export class NewelectionComponent implements OnInit {
      ngOnInit(): void {
       this.service.getcode().subscribe((data1: string) => {
         this.code = data1;
+      
+      
       });
+      
       
       }
 
     
     submit(){
       this.data = this.form.value
-      this.data.code=this.code;
+      this.data.code=this.code.codenum;
+      this.data.statut=true;
       console.log(this.data)
   
       this.service.addElectionstandard(this.data).subscribe(data => {
         console.log(data)
       })
-      this.router.navigate(['/']);
+    
     }
 }

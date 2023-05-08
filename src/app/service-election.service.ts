@@ -11,7 +11,7 @@ import { Condidat } from './Condidat';
 export class ServiceElectionService {
 
 
-  private url = "http://localhost:9138/";
+  private url = "http://localhost:9137/";
   private url1 = "http://localhost:9100/";
 
   constructor(private http: HttpClient) { }
@@ -48,6 +48,14 @@ getallelectionbypersonne(id:number):Observable<any[]>{
   return this.http.get<any[]>(`${this.url}getallelectionpersonne/${id}`)
 }
 
+getallusers():Observable<any[]>{
+  return this.http.get<any[]>(`${this.url}personnes`)
+}
+
+getallelections():Observable<any[]>{
+  return this.http.get<any[]>(`${this.url}test`)
+}
+
 
 //adduser
 adduser(user: User){
@@ -74,9 +82,11 @@ getusersbyelection(id?:number, election?:any):Observable<HttpEvent<any[]>>{
   return this.http.get<any[]>(`${this.url}getusersbyelection/${id}`, election)
 }
 
-getcode():any{
-  return this.http.get<any>(`${this.url1}creecodenum/`);
-
+getcode(): Observable<any> {
+  return this.http.get<any>(`${this.url1}creecodenum`);
 }
+
+
+
 
 }
