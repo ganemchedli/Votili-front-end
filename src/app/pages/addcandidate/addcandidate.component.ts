@@ -15,7 +15,7 @@ constructor(private service: ServiceElectionService, private router: Router) {
    
 }
 ngOnInit(): void {
-  this.service.getcondidatsbyelection(1).subscribe((data: any[]) => {
+  this.service.getallusers().subscribe((data: any[]) => {
     this.condidats = data;
   });
   

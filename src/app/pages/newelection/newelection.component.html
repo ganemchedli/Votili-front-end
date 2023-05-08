@@ -3,7 +3,7 @@
 <br>
 <br>
 
-<app-navbaradmin></app-navbaradmin>
+
 <br><br><br>
 <br>
 <br>
@@ -15,9 +15,9 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Créer une nouvelle élection</h4>
-                  <h3 class="card-title" style="color: cornflowerblue;">{{code}}</h3>
+                  <h3 class="card-title" style="color: cornflowerblue;">{{code.codenum}}</h3>
                   <p class="card-description">Entrer les données de l'élection</p>
-                  <form [formGroup]="form" (ngSubmit)="submit()" class="forms-sample">
+                  <form (submit)="submit()" [formGroup]="form" (ngSubmit)="submit()" class="forms-sample">
                     <div class="form-group">
                       <label for="Titre">Titre</label>
                       <input
@@ -36,11 +36,12 @@
                         placeholder="Description" formControlName="description"
                       />
                     </div>
-                    <button href="/election" type="submit" class="btn btn-primary me-2">
-                      Enregistrer
-                    </button>
+                    <button type="submit" class="btn btn-primary me-2">Enregistrer</button>
+
                     
-                    <button (click)=" submit()"  class="btn btn-light">Annuler</button>
+                    
+                    
+                    <button  class="btn btn-light">Annuler</button>
                   </form>
                 </div>
               </div>
@@ -50,7 +51,7 @@
           </div>
         </div>
       </div>
-
+      <app-mail-invitation></app-mail-invitation>
  <app-addcandidate></app-addcandidate>
 <app-autorizevoters></app-autorizevoters>
  
