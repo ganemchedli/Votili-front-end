@@ -15,26 +15,33 @@
                   </tr>
                 </thead>
                 <tbody>
-
-                  <tr *ngFor="let cin of cinAutorise; let i=index">
-                    <td>{{i + 1}}</td>
-                    <td>{{cin}}</td>
+                  <tr *ngFor="let cin of cinAutorise; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ cin }}</td>
                     <td>
-                      <button (click)="supprimer(i)" class="btn btn-danger dropdown-toggle" type="button">
+                      <button
+                        (click)="supprimer(i)"
+                        class="btn btn-danger dropdown-toggle"
+                        type="button"
+                      >
                         supprimer
                       </button>
                     </td>
                   </tr>
-
-                
                 </tbody>
               </table>
               <div class="form-group">
-                <input type="text"[(ngModel)] ="cin" class="form-control" placeholder="Ajouter CIN">
+                <input
+                  type="text"
+                  [(ngModel)]="cin"
+                  class="form-control"
+                  placeholder="Ajouter CIN"
+                />
               </div>
-             
-                <button (click)="ajoutcin()" type="button" class="btn btn-info">Ajouter+</button>
-              
+
+              <button (click)="ajoutcin()" type="button" class="btn btn-info">
+                Ajouter+
+              </button>
             </div>
           </div>
         </div>

@@ -1,63 +1,63 @@
 <!-- partial -->
-<br>
-<br>
-<br>
+<br />
+<br />
+<br />
 
 <app-navbaradmin></app-navbaradmin>
-<br><br><br>
-<br>
-<br>
-<br>
-    <div class="main-panel-navbaradmin ">
-        <div class="container-wrapper">
-          <div class="row">
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Créer une nouvelle élection</h4>
-                  <h3 class="card-title" style="color: cornflowerblue;">{{code}}</h3>
-                  <p class="card-description">Entrer les données de l'élection</p>
-                  <form [formGroup]="form" (ngSubmit)="submit()" class="forms-sample">
-                    <div class="form-group">
-                      <label for="Titre">Titre</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="titre"
-                        placeholder="Titre" formControlName="titre"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="Description">Description</label>
-                      <input
-                        type=""
-                        class="form-control"
-                        id="description"
-                        placeholder="Description" formControlName="description"
-                      />
-                    </div>
-                    <button href="/election" type="submit" class="btn btn-primary me-2">
-                      Enregistrer
-                    </button>
-                    
-                    <button (click)=" submit()"  class="btn btn-light">Annuler</button>
-                  </form>
-                </div>
+<br /><br /><br />
+<br />
+<br />
+<br />
+<div class="main-panel-navbaradmin">
+  <div class="container-wrapper">
+    <div class="row">
+      <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Créer une nouvelle élection</h4>
+            <h3 class="card-title" style="color: cornflowerblue">{{ code }}</h3>
+            <p class="card-description">Entrer les données de l'élection</p>
+            <form [formGroup]="form" (ngSubmit)="submit()" class="forms-sample">
+              <div class="form-group">
+                <label for="Titre">Titre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="titre"
+                  placeholder="Titre"
+                  formControlName="titre"
+                />
               </div>
-            </div>
-    
-            <!-- content-wrapper ends -->
+              <div class="form-group">
+                <label for="Description">Description</label>
+                <input
+                  type=""
+                  class="form-control"
+                  id="description"
+                  placeholder="Description"
+                  formControlName="description"
+                />
+              </div>
+              <button
+                href="/election"
+                type="submit"
+                class="btn btn-primary me-2"
+              >
+                Enregistrer
+              </button>
+
+              <button (click)="submit()" class="btn btn-light">Annuler</button>
+            </form>
           </div>
         </div>
       </div>
 
- <app-addcandidate></app-addcandidate>
+      <!-- content-wrapper ends -->
+    </div>
+  </div>
+</div>
+
+<app-addcandidate></app-addcandidate>
 <app-autorizevoters></app-autorizevoters>
- 
+
 <a class="btn btn-danger" href="/allelections">Create Now</a>
-
-
-
-
-
-

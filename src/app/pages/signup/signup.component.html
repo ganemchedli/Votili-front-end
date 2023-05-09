@@ -10,13 +10,13 @@
             <h4 class="card-title">Formulair d'inscription</h4>
             <p class="card-description">Inscrivez-vous dans notre plateforme</p>
             <form [formGroup]="form" (ngSubmit)="submit()">
-
               <div class="form-group">
                 <label for="Nom">Nom</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="Nom"  formControlName="nom"
+                  id="Nom"
+                  formControlName="nom"
                   placeholder="Nom"
                 />
               </div>
@@ -25,7 +25,8 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="Prenom"  formControlName="prenom"
+                  id="Prenom"
+                  formControlName="prenom"
                   placeholder="Prenom"
                 />
               </div>
@@ -34,7 +35,8 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="login"  formControlName="login"
+                  id="login"
+                  formControlName="login"
                   placeholder="example@gmail.com"
                 />
               </div>
@@ -43,24 +45,27 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="numcin"  formControlName="numcin"
+                  id="numcin"
+                  formControlName="numcin"
                   placeholder=""
                 />
               </div>
               <div class="form-group">
-                <label for="bac" id="bac">Titulaire de baccalauréat</label><br>
-                <select name="bac"   formControlName="bac" class="custom-select">
-                    <option value="0">--Oui ou Non</option>
-                    <option value="1">Oui</option>
-                    <option value="2">Non</option>
-                  </select>
+                <label for="bac" id="bac">Titulaire de baccalauréat</label
+                ><br />
+                <select name="bac" formControlName="bac" class="custom-select">
+                  <option value="0">--Oui ou Non</option>
+                  <option value="1">Oui</option>
+                  <option value="2">Non</option>
+                </select>
               </div>
               <div class="form-group">
                 <label for="age">Age</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="age"  formControlName="age"
+                  id="age"
+                  formControlName="age"
                   placeholder=""
                 />
               </div>
@@ -69,13 +74,14 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="genre"  formControlName="genre"
+                  id="genre"
+                  formControlName="genre"
                   placeholder="Homme/Femme"
                 />
               </div>
               <div class="form-group">
                 <label for="region" id="region">Region</label><br />
-                <select name="region" class=""  formControlName="region" >
+                <select name="region" class="" formControlName="region">
                   <option value="">--Choisir une region--</option>
                   <option value="nord">nord</option>
                   <option value="sud">sud</option>
@@ -84,19 +90,39 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="password"  >Mot de passe</label>
-                <input type="password" id="password" formControlName="password" placeholder="Mot de passe" class="form-control" autocomplete="new-password">
+                <label for="password">Mot de passe</label>
+                <input
+                  type="password"
+                  id="password"
+                  formControlName="password"
+                  placeholder="Mot de passe"
+                  class="form-control"
+                  autocomplete="new-password"
+                />
               </div>
               <div class="form-group">
                 <label for="confirmepassword">Confirmer mot de passe</label>
-                <input type="password" id="confirmepassword" formControlName="confirmepassword" placeholder="Confirmation de mot de passe" class="form-control" autocomplete="new-password">
+                <input
+                  type="password"
+                  id="confirmepassword"
+                  formControlName="confirmepassword"
+                  placeholder="Confirmation de mot de passe"
+                  class="form-control"
+                  autocomplete="new-password"
+                />
               </div>
-            
+
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <input [disabled]="!form.valid" class="btn btn-primary w-100" type="submit" value="Submit">
+                  <input
+                    [disabled]="!form.valid"
+                    class="btn btn-primary w-100"
+                    type="submit"
+                    value="Submit"
+                  />
                 </div>
-              </div> <button class="btn btn-light">Annuler</button>
+              </div>
+              <button class="btn btn-light">Annuler</button>
             </form>
           </div>
         </div>

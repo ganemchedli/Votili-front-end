@@ -42,6 +42,8 @@ const routes: Routes = [
   {path:'realtimeresult', component:RealtimeresultComponent},
   {path:'formcin', component:FormNewVotantComponent},
   {path:'formcondidat', component:FormNewCondidatComponent},
+  { path: '**', component:HomeComponent }
+
 ];
 
 @NgModule({
