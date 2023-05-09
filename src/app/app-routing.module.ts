@@ -12,7 +12,7 @@ import { StatRegionComponent } from './pages/result/stat-region/stat-region.comp
 import { StatbacComponent } from './pages/result/statbac/statbac.component';
 import { TestComponent } from './test/test.component';
 import { SidebarComponent } from './pages/result/sidebar/sidebar.component';
-import { AllelectionvotantComponent } from './allelectionvotant/allelectionvotant.component';
+// import { AllelectionvotantComponent } from './allelectionvotant/allelectionvotant.component';
 import { AllelectionComponent } from './pages/allelection/allelection.component';
 import { ServiceComponent } from './pages/service/service.component';
 import { CodeVoteComponent } from './pages/code-vote/code-vote.component';
@@ -21,7 +21,9 @@ import { ElectiondetailsComponent } from './pages/electiondetails/electiondetail
 import { RealtimeresultComponent } from './pages/realtimeresult/realtimeresult.component';
 import { FormNewVotantComponent } from './pages/form-new-votant/form-new-votant.component';
 import { FormNewCondidatComponent } from './pages/form-new-condidat/form-new-condidat.component';
+import { MailInvitationComponent } from './pages/mail-invitation/mail-invitation.component';
 const routes: Routes = [
+  // { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path:'inscrit', component:SignupComponent},
   {path:'login', component:LoginComponent},
   {path:'voter', component:VoteComponent},
@@ -42,8 +44,8 @@ const routes: Routes = [
   {path:'realtimeresult', component:RealtimeresultComponent},
   {path:'formcin', component:FormNewVotantComponent},
   {path:'formcondidat', component:FormNewCondidatComponent},
-  { path: '**', component:HomeComponent }
-
+  { path: '**', component:HomeComponent },
+  {path:'email', component:MailInvitationComponent}
 ];
 
 @NgModule({

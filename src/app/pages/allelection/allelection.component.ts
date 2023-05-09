@@ -20,8 +20,8 @@ export class AllelectionComponent implements OnInit {
     }
 iduser:number =1;
 
-getallelectionbypersonne(id:number){
-      this.serviceelection.getallelectionbypersonne(1).subscribe(data =>{
+getallelectionbypersonne(){
+      this.serviceelection.getallelections().subscribe(data =>{
 
         this.elections=data;
       })

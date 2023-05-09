@@ -37,6 +37,7 @@ import { RealtimeresultComponent } from './pages/realtimeresult/realtimeresult.c
 import { FormNewVotantComponent } from './pages/form-new-votant/form-new-votant.component';
 import { FormNewCondidatComponent } from './pages/form-new-condidat/form-new-condidat.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MailInvitationComponent } from './pages/mail-invitation/mail-invitation.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { HttpClientModule } from '@angular/common/http';
    RealtimeresultComponent,
    FormNewVotantComponent,
    FormNewCondidatComponent,
+   MailInvitationComponent,
 
  
 
@@ -103,6 +105,7 @@ import { HttpClientModule } from '@angular/common/http';
   {path:'realtimeresult', component:RealtimeresultComponent},
   {path:'formcin', component:FormNewVotantComponent},
   {path:'formcondidat', component:FormNewCondidatComponent},
+  {path:'email', component:MailInvitationComponent},
 ])
   ],
   providers: [],

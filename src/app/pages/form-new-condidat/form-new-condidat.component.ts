@@ -19,16 +19,29 @@ export class FormNewCondidatComponent implements OnInit {
     pseudo: new FormControl('', [Validators.required]),
     numcin: new FormControl('', [Validators.required])
   })
+
+
   ngOnInit(): void {
+
   }
+
+  
+  
+
   submit(){
     this.data = this.form.value
+     this.data.login="login";
+     this.data.password="login";
+     this.data.NbreVote=0;
     console.log(this.data)
 
-    this.service.addcondidat(this.data).subscribe(data => {
+    this.service.adduser(this.data).subscribe(data => {
       console.log(data)
+
     })
+   
     this.router.navigate(['/']);
   }
 
 }
+
